@@ -187,7 +187,7 @@ Le fichier à utiliser est [`kivora-support-triage/Kivora Support Triage.workflo
 ├── kivora-support-triage/
 │   ├── Kivora Support Triage.workflow.ts    le workflow en TypeScript (n8ncli)
 │   └── workflow.png                         capture du workflow dans n8n
-├── skills/                                  skills Claude utilisées sur le projet
+├── skills/                                  skills utilisées sur le projet
 │   ├── interview/                           clarifier un besoin avant de construire
 │   ├── doubt-driven-dev/                    boucle d'auto-critique du travail produit
 │   └── hostile-review/                      revue adverse : défauts, failles, affirmations non prouvées
