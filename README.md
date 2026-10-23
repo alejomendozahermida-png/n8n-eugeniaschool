@@ -12,7 +12,7 @@
 
 </div>
 
-Projet du MSc IA, Eugenia School. Kivora est un logiciel fictif de notes de frais et de factures fournisseurs. Le workflow lit des tickets clients dans un Google Sheet, décide pour chacun s'il peut recevoir une réponse automatique, un brouillon à valider ou s'il doit être escaladé, puis trace chaque décision.
+Projet du cours de n8n du MSc IA, Eugenia School, construit à partir d'un **cas d'usage proposé par Wesype** (voir [Origine du projet](#origine-du-projet)). Kivora est un logiciel fictif de notes de frais et de factures fournisseurs. Le workflow lit des tickets clients dans un Google Sheet, décide pour chacun s'il peut recevoir une réponse automatique, un brouillon à valider ou s'il doit être escaladé, puis trace chaque décision.
 
 ![Vue d'ensemble du workflow dans n8n](kivora-support-triage/workflow.png)
 
@@ -20,15 +20,30 @@ Projet du MSc IA, Eugenia School. Kivora est un logiciel fictif de notes de frai
 
 ## Sommaire
 
-1. [L'idée en bref](#lidée-en-bref)
-2. [Comment ça marche](#comment-ça-marche)
-3. [Les trois niveaux](#les-trois-niveaux)
-4. [Règles de sécurité](#règles-de-sécurité)
-5. [Résultats des tests](#résultats-des-tests)
-6. [Installer et rejouer](#installer-et-rejouer)
-7. [Limites connues](#limites-connues)
-8. [Contenu du dépôt](#contenu-du-dépôt)
-9. [Vidéo de démonstration](#vidéo-de-démonstration)
+1. [Origine du projet](#origine-du-projet)
+2. [L'idée en bref](#lidée-en-bref)
+3. [Comment ça marche](#comment-ça-marche)
+4. [Les trois niveaux](#les-trois-niveaux)
+5. [Règles de sécurité](#règles-de-sécurité)
+6. [Résultats des tests](#résultats-des-tests)
+7. [Installer et rejouer](#installer-et-rejouer)
+8. [Limites connues](#limites-connues)
+9. [Contenu du dépôt](#contenu-du-dépôt)
+10. [Vidéo de démonstration](#vidéo-de-démonstration)
+
+---
+
+## Origine du projet
+
+Ce projet a été réalisé pour le **cours de n8n** du MSc IA (Eugenia School). Il prend comme base un **cas d'usage proposé par Wesype** : l'étude de cas « Kivora », remise sous la forme d'un kit de départ.
+
+Le kit apporte le contexte et la matière première :
+
+- une base documentaire du support Kivora, en fichiers Markdown versionnés, datés et rattachés à un propriétaire. C'est une base réelle, non nettoyée pour l'exercice ;
+- des comptes clients, avec leur plan tarifaire et leur langue ;
+- dix tickets de support, tels que le support les reçoit.
+
+Ce dépôt contient la réponse apportée à ce cas : le workflow, ses règles de décision, les tests et leurs résultats. Comme la base est réelle, une de ses sources, une FAQ interne ancienne et contredite par les documents à jour, est volontairement exclue des réponses du workflow.
 
 ---
 
@@ -109,7 +124,7 @@ Le niveau final est **le plus haut** parmi tous ces critères, et il ne fait que
 
 ## Résultats des tests
 
-Dix tickets de test, construits pour couvrir les trois niveaux : 3 N0, 3 N1, 4 N2. Chaque ticket a un niveau attendu, comparé au niveau obtenu dans la colonne `test_ok` de l'onglet Trace.
+Dix tickets de test, écrits à la main pour couvrir les trois niveaux : 3 N0, 3 N1, 4 N2. Ce ne sont pas les tickets du kit Wesype. Chaque ticket a un niveau attendu, comparé au niveau obtenu dans la colonne `test_ok` de l'onglet Trace.
 
 | Test | Résultat |
 |---|---|
