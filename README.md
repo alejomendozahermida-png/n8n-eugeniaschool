@@ -45,7 +45,7 @@ Le principe central : **le niveau de traitement est décidé par des règles de 
 ## Comment ça marche
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Tickets<br/>Google Sheet] --> B[Garde-fous<br/>regex]
     B --> C[Classification<br/>Jev 1.14]
     C --> D[Calcul du niveau<br/>et de l'équipe]
